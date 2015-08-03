@@ -50,16 +50,16 @@
 
 <body>
 
-   <div class="folium-map" id="folium_80572beb5df743bd9f704b0cd7bdac4a" style="width: 960px; height: 500px"></div>
+   <div class="folium-map" id="folium_4a76a8118d3845c2a58006719e7368df" style="width: 960px; height: 500px"></div>
 
    <script>
 
       
 
-      var base_tile = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      var base_tile = L.tileLayer('http://{s}.tiles.mapbox.com/v3/mapbox.control-room/{z}/{x}/{y}.png', {
           maxZoom: 18,
           minZoom: 1,
-          attribution: 'Map data (c) <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+          attribution: 'Map tiles by <a href="http://www.mapbox.com/m">Mapbox</a> Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.'
       });
 
       var baseLayer = {
@@ -94,7 +94,7 @@
       /*
       Creates the map and adds the selected layers
       */
-      var map = L.map('folium_80572beb5df743bd9f704b0cd7bdac4a', {
+      var map = L.map('folium_4a76a8118d3845c2a58006719e7368df', {
                                        center:[45.5236, -122.675],
                                        zoom: 10,
                                        maxBounds: bounds,
